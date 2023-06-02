@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Car Rental Service</title>
+		<meta chatset="UTF-8">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+		<link rel="icon" href="assets/rent-icon.png" type="image/rent-icon">
+	</head>
+	<body style="overflow: auto">
+		<div id="root">
+			<nav>
+				<div class="navbar">
+					<div class="navbar-img">
+						<img class="navbar-logo" src="assets/logo.png">
+					</div>
+					<ul class="navbar-links">
+						<li><a class="home-link" href="/">Home</a></li>
+						<li><a class="about-link" href="#plan-section">About</a></li>
+						<li><a class="models-link" href="#pick-section">Vehicle Models</a></li>
+						<li><a class="testimonials-link" href="#testimonials-section">Testimonials</a></li>
+						<li><a class="contact-link" href="#footer-section">Contact</a></li>
+					</ul>
+					<div class="navbar-buttons">
+						<a class="navbar-buttons-sign-in" href="/">Sign In</a>
+						<a class="navbar-buttons-register" href="/">Register</a>
+					</div>
+				</div>
+			</nav>
+			<section id="home" class="hero-section">
+				<div class="container">
+					<img class="bg-shape" src="assets/hero-bg.png" alt="bg-shape">
+					<div class="hero-content">
+						<div class="hero-content-text">
+							<h4>Plan your trip today</h4>
+							<h1>Save <span>big</span> with our<br>car rental</h1>
+							<p>Find the right vehicle for you. Unbeatable prices, unlimited miles,<br>and flexible pick-up options.</p>
+							
+							<div class="hero-content-text-buttons">
+								<a class="book-vehicle" href="#booking">Book Vehicle<i class="fa-solid fa-circle-check"></i></a>
+								<a class="learn-more" href="#plan-section">Learn More<i class="fa-solid fa-angle-right"></i></a>
+							</div>
+						</div>
+							<img class="hero-content-car-img" src="assets/main-car.png">
+					</div>
+				</div>
+			</section>
+			<section id="booking" class="book-section">
+				<div class="container">
+					<div class="book-content">
+						<div class="book-content-box">
+							<h2>Book a vehicle</h2>
+							<p class="error-message" style="display: none">All fields required!<i class="fa-solid fa-x"></i></p>
+							<p class="success-message" style="display: none;">Your rental has been confirmed! Check your email
+							for your comfirmation details.</p>
+							<form class="box-form">
+								<div class="box-form-vehicle-type">
+									<label><i class="fa-solid fa-car" style="color: #ff4d30;"></i> Select Your Vehicle <b>*</b></label>
+									<select>
+										<option>Select your vehicle</option>
+										<option value="Audi A1 S-line">Audi A1 S-Line</option>
+										<option value="VW Golf 6">VW Golf 6</option>
+										<option value="Toyota Camry">Toyota Camry</option>
+										<option value="BMW 320 ModernLine">BMW 320 ModernLine</option>
+										<option value="Mercedes-Benz GLK">Mercedes-Benz GLK</option>
+										<option value="VW Passat CC">VW Passat CC</option>
+									</select>
+								</div>
+								<div class="box-form-vehicle-type">
+									<label><i class="fa-solid fa-location-dot" style="color: #ff4d30;"></i> Pick-up <b>*</b></label>
+									<select>
+										<option>Select pick up location</option>
+										<option>Austin</option>
+										<option>Conroe</option>
+										<option>Dallas</option>
+										<option>Houston</option>
+										<option>Huntsville</option>
+										<option>San Antonio</option>
+									</select>
+								</div>
+								<div class="box-form-vehicle-type">
+									<label><i class="fa-solid fa-location-dot" style="color: #ff4d30;"></i> Return <b>*</b></label>
+									<select>
+										<option>Select return location</option>
+										<option>Austin</option>
+										<option>Conroe</option>
+										<option>Dallas</option>
+										<option>Houston</option>
+										<option>Huntsville</option>
+										<option>San Antonio</option>
+									</select>
+								</div>
+								<div class="box-form-vehicle-time">
+									<label for="picktime"><i class="fa-regular fa-calendar-days" style="color: #ff4d30;"></i> Pick-up <b>*</b></label>
+									<input id="picktime" type="date" value>
+								</div>
+								<div class="box-form-vehicle-time">
+									<label for="returntime"><i class="fa-regular fa-calendar-days" style="color: #ff4d30;"></i> Return <b>*</b></label>
+									<input id="returntime" type="date" value>
+								</div>
+								<button type="submit">Reserve</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="plan-section">
+				<div class="container">
+					<div class="plan-container">
+						<div class="plan-container-title">
+							<h3>Plan your trip now</h3>
+							<h2>Quick and easy car rental</h2>
+						</div>
+						<div class="plan-container-boxes">
+							<div class="plan-container-boxes-content">
+								<img src="assets/planicon1.png" alt="icon-img">
+								<h3>Select Vehicle</h3>
+								<p>We offer a wide variety of vehicles for all of your travel needs. See what vehicle is right for you</p>
+							</div>
+							<div class="plan-container-boxes-content">
+								<img src="assets/planicon2.png" alt="icon-img">
+								<h3>Contact Agent</h3>
+								<p>Our knowledgeable agents are always ready to assist you with any questions or concerns</p>
+							</div>
+							<div class="plan-container-boxes-content">
+								<img src="assets/planicon3.png" alt="icon-img">
+								<h3>Lets Drive</h3>
+								<p>Whether you're going on an adventure or traveling for business, we've got you covered with our wide variety of vehicles</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="pick-section">
+				<div class="container">
+					<div class="pick-container">
+						<div class="pick-container-title">
+							<h3>Vehicle Models</h3>
+							<h2>Our rental fleet</h2>
+							<p>Choose from a variety of our amazing vehicles to rent for your next venture</p>
+						</div>
+						<div class="pick-container-vehicle-content">
+							<div class="pick-box">
+								<button class="colored-button btnAudi">Audi A1 S-line</button>
+								<button class="btnVW">VW Golf 6</button>
+								<button class="btnToyota">Toyota Camry</button>
+								<button class="btnBMW">BMW 320 ModernLine</button>
+								<button class="btnMB">Mercedes-Benz GLK</button>
+								<button class="btnVWPassat">VW Passat CC</button>
+							</div>
+							<div class="box-vehicles">
+								<div class="pick-vehicle">
+									<img src="assets/audia1.jpg" alt="car-img">
+								</div>
+								<div class="pick-description">
+									<div class="pick-description-price"><span>$45</span> / rent per day</div>
+									<div class="pick-description-table">
+										<div class="pick-description-table-col">
+											<span>Make</span>
+											<span>Audi</span>
+										</div>
+										<div class="pick-description-table-col">
+											<span>Model</span>
+											<span>A1</span>
+										</div>
+										<div class="pick-description-table-col">
+											<span>Year</span>
+											<span>2012</span>
+										</div>
+										<div class="pick-description-table-col">
+											<span>Doors</span>
+											<span>4</span>
+										</div>
+										<div class="pick-description-table-col">
+											<span>AC</span>
+											<span>Yes</span>
+										</div>
+										<div class="pick-description-table-col">
+											<span>Trans</span>
+											<span>Manual</span>
+										</div>
+										<div class="pick-description-table-col">
+											<span>Fuel</span>
+											<span>Gasoline</span>
+										</div>
+										<a class="reserve-btn" href="#booking">Reserve Now</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="banner-section">
+				<div class="container">
+					<div class="banner-content">
+						<div class="banner-content-text">
+							<h2>Save big with our affordable car rental!</h2>
+							<p>Top Airports. Local Suppliers. <span>24/7</span> Support.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="testimonials-section">
+				<div class="container">
+					<div class="testimonials-content">
+						<div class="testimonials-content-title">
+							<h4>Reviewed by people</h4>
+							<h2>Client Testimonials</h2>
+							<p>Discover the positive impact we've made on our customers by reading through their
+							testimonials.</p>
+						</div>
+						<div class="all-testimonials">
+							<div class="all-testimonials-box">
+								<span class="quotes-icon"><i class="fa-solid fa-quote-right"></i></span>
+								<p>"We rented a car form this website and had an amazing experience! The booking was 
+								easy and the rates were very affordable."</p>
+								<div class="all-testimonials-box-name">
+									<div class="all-testimonials-box-name-profile">
+										<img src="assets/pfp1.jpg" alt="user-img">
+										<span>
+											<h4>Harry Potter</h4>
+											<p>Houston</p>
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="all-testimonials-box-2">
+								<span class="quotes-icon"><i class="fa-solid fa-quote-right"></i></span>
+								<p>"The car was in great condition and made our trip even better. Highly recommend 
+								this car rental website!"</p>
+								<div class="all-testimonials-box-name">
+									<div class="all-testimonials-box-name-profile">
+										<img src="assets/pfp2.jpg" alt="user-img">
+										<span>
+											<h4>Ron Weasley</h4>
+											<p>Dallas</p>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="download-section">
+				<div class="container">
+					<div class="download-text">
+						<h2>Download our app to get the most out of your rentals</h2>
+						<div class="download-text-btns">
+							<img alt="download-img" src="assets/appstore.svg">
+							<img alt="download-img" src="assets/googleapp.svg">
+						</div>
+					</div>
+				</div>
+			</section>
+			<footer class="footer-section">
+				<div class="container">
+					<div class="footer-content">
+						<ul class="footer-content-1">
+							<li><span>CAR</span> Rental</li>
+							<li>We offer a wide variety of vehicles for all of
+							your travel needs.</li>
+							<li>
+								<a href="tel:123456789">
+									<i class="fa-solid fa-phone" style="color: #000000;"></i> (123)-456-7890
+								</a>
+							</li>
+							<li>
+								<a href="mailto: carrental@gmail.com">
+									<i class="fa-solid fa-envelope" style="color: #000000;"></i> carrental@gmail.com
+								</a>
+							</li>
+						</ul>
+						<ul class="footer-content-2">
+							<li>Company</li>
+							<li><a href="">Texas</a></li>
+							<li><a href="">Careers</a></li>
+							<li><a href="">Blog</a></li>
+							<li><a href="">Mobile</a></li>
+							<li><a href="">About us</a></li>
+						</ul>
+						<ul class="footer-content-2">
+							<li>Store Hours</li>
+							<li>Mon - Fri: 8:00AM - 8:00PM</li>
+							<li>Sat: 8:00AM - 10PM</li>
+							<li>Sun: Closed</li>
+						</ul>
+						<ul class="footer-content-2">
+							<li>News</li>
+							<li>
+								<p>Enter your email to opt in to receive news and updates.</p>
+							</li>
+							<li>
+								<input type="email"
+								placeholder="Enter Email Address">
+							</li>
+							<li>
+								<button class="submit-email">Subscribe</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<script src="app.js"></script>
+		<script src="scroll.js"></script>
+	</body>
+</html>
